@@ -12,8 +12,8 @@ const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
     onSearch(newQuery);
   };
   return (
-    <div className="search-bar-container">
-      <form onSubmit={(e) => e.preventDefault()}>
+    <div >
+      <form className="search-bar-container" onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
           value={query}

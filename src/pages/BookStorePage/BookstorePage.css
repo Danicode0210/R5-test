@@ -4,9 +4,9 @@
 
 .bookstore-page h1 {
   text-align: center;
-  color: #007bff; 
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .modal {
@@ -23,15 +23,17 @@
 
 .modal-content {
   background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 500px;
-  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 500px; 
+  width: 90%;
+  max-height: 90%;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 
 .close {
@@ -39,14 +41,15 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .modal h2 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #007bff;
   text-align: center;
+  padding: 20px;
 }
 
 .modal img {
@@ -63,9 +66,9 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   resize: none;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 textarea::placeholder {
@@ -74,15 +77,16 @@ textarea::placeholder {
 
 button {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: background-color 0.3s;
+  width: 100%;
 }
 
 button:hover {
@@ -92,12 +96,13 @@ button:hover {
 button.star-button {
   background-color: transparent;
   color: #ffa500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0;
   border: none;
   cursor: pointer;
+  width: auto;
 }
 
 button.star-button:hover {
@@ -105,13 +110,13 @@ button.star-button:hover {
 }
 
 .comments-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .comments-section h3 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: #007bff; 
+  font-size: 1rem;
+  color: #007bff;
 }
 
 .comments-section p {
@@ -121,4 +126,20 @@ button.star-button:hover {
   border: 1px solid #ddd;
   margin-bottom: 0.5rem;
   word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 0.5rem;
+    width: 95%;
+    max-height: 80%;
+  }
+
+  textarea {
+    min-height: 60px;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
 }

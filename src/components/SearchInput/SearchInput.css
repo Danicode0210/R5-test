@@ -1,46 +1,61 @@
 .search-bar-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .search-bar-container form {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .search-bar-container input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  .search-bar-container input::placeholder {
-    color: #aaa;
-  }
-  
-  .search-bar-container input:focus {
-    border-color: #007bff;
-  }
-  
-  .search-bar-container button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-bar-container button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar-container form {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-bar-container input {
+  flex: 1;
+  height: 40px;
+  padding: 0 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.search-bar-container input::placeholder {
+  color: #aaa;
+}
+
+.search-bar-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  height: 40px;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  margin-top: 0;
+}
+
+.search-bar-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.search-bar-container button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}

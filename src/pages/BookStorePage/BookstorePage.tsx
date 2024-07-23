@@ -116,7 +116,7 @@ const BookstorePage: React.FC = () => {
   return (
     <div className="bookstore-page">
       <h1 >Bookstore</h1>
-      <div className="search-bar-container">
+      <div>
         <SearchInput onSearch={handleSearch} />
       </div>
       {loading ? <p>Loading...</p> : (
