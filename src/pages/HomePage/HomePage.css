@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #4285F4;
+  --secondary-color-red: #EA4335;
+  --secondary-color-yellow: #FBBC05;
+  --secondary-color-green: #34A853;
+  --background-color: #F8F9FA;
+  --text-color: #202124;
+  --white-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-page h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.book {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book-image {
+  width: 100%;
+  padding: 1rem;
+}
+
+.book-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+
+.book p {
+  color: var(--text-color);
+  padding: 0 1rem 1rem;
+  font-size: 0.9rem;
+}
